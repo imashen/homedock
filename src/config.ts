@@ -88,7 +88,6 @@ function parseRest(
       .filter(Boolean)
     rest = rest.replace(pc[0], '')
   }
-  rest = rest.replace(/^[\s|\-—]+/, '').replace(/\|+$/, '').trim()
   // 解析可选的状态标记：status: online | closed | unknown
   let status: Status | undefined
   const stc = rest.match(/status:\s*(online|closed|unknown)/)
@@ -96,6 +95,7 @@ function parseRest(
     status = stc[1] as Status
     rest = rest.replace(stc[0], '')
   }
+  rest = rest.replace(/^[\s|\-—]+/, '').replace(/\|+$/, '').trim()
   return {
     name,
     url: isInfo ? undefined : url,
@@ -112,8 +112,9 @@ function parseRest(
 
 /**
  * 极简 Markdown 解析：
- *   链接卡：## 分类 换行 - [名称](url) 描述 @scope :icon:
- *   端口卡：## 分类 换行 - 名称 描述 @scope :icon: host: 1.2.3.4 ports: 22 / SSH
+ *   链接卡：## 分类 换行 - [名称](url) 描述 @scope :icon: status:online
+ *   端口卡：## 分类 换行 - 名称 描述 @scope :icon: host: 1.2.3.4 ports: 22 / SSH status:online
+ *   其中 @scope、:icon:、host:、ports:、status: 均可省略，按顺序随意摆放。
  */
 function parseMd(md: string): RawSite[] {
   const lines = md.split('\n')

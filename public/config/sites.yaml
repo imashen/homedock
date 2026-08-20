@@ -31,7 +31,7 @@ sites:
     category: 网关与路由
     scope: internal
     type: link
-    url: "http://10.0.0.1"
+    url: "https://example.com"
     icon: "🛰️"
     status: online
 
@@ -40,7 +40,7 @@ sites:
     category: 网关与路由
     scope: internal
     type: link
-    url: "http://10.0.0.2"
+    url: "https://example.com"
     icon: "📡"
     status: online
 
@@ -50,7 +50,7 @@ sites:
     category: 虚拟化与存储
     scope: internal
     type: link
-    url: "https://10.0.0.3:8006"
+    url: "https://example.com"
     icon: "🖥️"
     status: online
 
@@ -59,7 +59,7 @@ sites:
     category: 虚拟化与存储
     scope: internal
     type: link
-    url: "http://10.0.0.5"
+    url: "https://example.com"
     icon: "🗄️"
     status: online
 
@@ -68,7 +68,7 @@ sites:
     category: 虚拟化与存储
     scope: internal
     type: link
-    url: "http://10.0.0.6:3000"
+    url: "https://example.com"
     icon: "🌐"
     status: online
 
@@ -77,7 +77,7 @@ sites:
     category: 虚拟化与存储
     scope: internal
     type: link
-    url: "http://10.0.0.8:8384"
+    url: "https://example.com"
     icon: "🔁"
     status: online
 
@@ -87,7 +87,7 @@ sites:
     category: 网络与安全
     scope: internal
     type: link
-    url: "http://10.0.0.4"
+    url: "https://example.com"
     icon: "🛡️"
     status: online
 
@@ -96,7 +96,7 @@ sites:
     category: 网络与安全
     scope: internal
     type: link
-    url: "http://10.0.0.8:9876"
+    url: "https://example.com"
     icon: "🌐"
     status: online
 
@@ -105,7 +105,7 @@ sites:
     category: 网络与安全
     scope: internal
     type: link
-    url: "https://10.0.0.8:9443"
+    url: "https://example.com"
     icon: "🐳"
     status: online
 
@@ -165,7 +165,7 @@ sites:
     category: 个人站点
     scope: external
     type: link
-    url: "https://blog.example.com"
+    url: "https://example.com"
     icon: "📝"
     status: unknown
 
@@ -175,7 +175,7 @@ sites:
     category: 媒体与工具
     scope: external
     type: link
-    url: "https://photos.example.com:4443"
+    url: "https://example.com"
     icon: "📷"
     status: online
 
@@ -184,7 +184,7 @@ sites:
     category: 媒体与工具
     scope: external
     type: link
-    url: "https://music.example.com:4443"
+    url: "https://example.com"
     icon: "🎵"
     status: online
 
@@ -193,7 +193,7 @@ sites:
     category: 媒体与工具
     scope: external
     type: link
-    url: "https://vault.example.com:4443"
+    url: "https://example.com"
     icon: "🔐"
     status: online
 
@@ -202,7 +202,7 @@ sites:
     category: 媒体与工具
     scope: external
     type: link
-    url: "https://media.example.com:4443"
+    url: "https://example.com"
     icon: "🎬"
     status: online
 
@@ -211,7 +211,7 @@ sites:
     category: 媒体与工具
     scope: external
     type: link
-    url: "https://status.example.com:4443"
+    url: "https://example.com"
     icon: "📊"
     status: online
 
@@ -220,6 +220,6 @@ sites:
     category: 媒体与工具
     scope: external
     type: link
-    url: "https://learn.example.com:4443"
+    url: "https://example.com"
     icon: "🎓"
     status: closed
