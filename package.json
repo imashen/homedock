@@ -1,0 +1,39 @@
+{
+  "name": "homedock",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "家庭 / Homelab 服务导航面板：用 YAML / JSON / Markdown 管理内网、外网与端口类服务，支持搜索、网络范围筛选、暗色模式与一键复制 SSH/RDP 命令；零后端、纯静态，可托管到任意静态空间。",
+  "keywords": [
+    "dashboard",
+    "homelab",
+    "self-hosted",
+    "home-server",
+    "nav",
+    "static-site"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imashen/homedock"
+  },
+  "homepage": "https://github.com/imashen/homedock",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  }
+}

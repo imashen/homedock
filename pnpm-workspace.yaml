@@ -1,0 +1,15 @@
+# 单包项目的 pnpm 配置。
+# packages 声明根目录为唯一工作包，避免 pnpm 把它误判成“空 workspace”
+# 而报 `packages field missing or empty`。
+#
+# allowBuilds 是 pnpm 11 的构建脚本放行设置（pnpm 10 及更早版本的
+# onlyBuiltDependencies / neverBuiltDependencies / ignoredBuiltDependencies
+# 均已移除，package.json 里的 pnpm 字段也不再读取）。
+# esbuild 需要运行 postinstall 落地平台二进制（Vite 依赖它），必须放行。
+# 注意：pnpm 11 默认 strictDepBuilds: true，未放行的构建脚本会直接报
+# ERR_PNPM_IGNORED_BUILDS 错误而不是警告。
+packages:
+  - '.'
+
+allowBuilds:
+  esbuild: true

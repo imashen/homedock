@@ -1,0 +1,8 @@
+# 依赖与构建产物（不纳入版本控制）
+node_modules
+node_modules_broken
+dist
+
+# 本地编辑缓存
+*.log
+.DS_Store
